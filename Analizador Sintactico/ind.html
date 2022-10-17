@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Analizador Lexico</title>
+     <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="container">
+      <div class="col-sm-12 text-center ">
+          
+          <div class="row justify-content-center">
+  
+              <div class="col-sm-6 ">
+      <br>
+      <h1>Georges Gil 1-18-2363</h1>
+      <br><br>
+      <h2>Entrada</h2>
+    <div class="container_formulario">
+      <div class="container_form">
+          <h1 class="h4">Analizador de JavaScript</h1>
+          <form id="container_codigo">
+            <textarea
+              class="text-body-1"
+              name="entrada"
+              placeholder="const variable = 1;"
+              id="codigo"
+              cols="74"
+              rows="10"
+            ></textarea>
+            <div class="group-buttons">
+              <button type="submit"  id="btn-compilar" class="btn btn-danger custombtn">Analizar</button>
+              <button type="reset" class="btn btn-success custombtn">Limpiar</button>
+            </div>
+          </form>
+      </div>
+      <div class="container_lexico">
+        <h2>Analizador Lexico</h2>
+        <div id="aLexico">
+          <div class="col-sm-12 ">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th class="h6">Nombre</th>
+                <th class="h6">Tipo</th>
+                <th class="h6">Codigo</th>
+              </tr>
+            </thead>
+            <tbody id="datos"></tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+      <div class="container_sintactico">
+        <h2>Analizador Sintactico</h2>
+        <div id="aSintactico">
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  
+    <script src="./app.js"></script>
+</body>
+</html>
